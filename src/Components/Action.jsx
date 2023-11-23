@@ -9,7 +9,7 @@ function Action() {
 
     return (
         <>
-            <div className='row '>
+            <div className='row  d-flex'>
 
                 {state && state.map((item, index) =>
                     <div className="product-card col-3" key={item.id}>
@@ -20,8 +20,11 @@ function Action() {
                             <span class="product-catagory">{item.type}</span>
                             <h4><a href="">{item.name}</a></h4>
                             <p>{item.color}</p>
-                            <a className='btn'>
+                            <a className='btn btn-secondary'>
                                 Add Cart +
+                            </a>
+                            <a className='btn ms-2 btn-secondary'>
+                                Delete Cart -
                             </a>
                         </div>
                     </div>
